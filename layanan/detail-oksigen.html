@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" type="image/svg" href="../assets/img/logo.svg"/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />  
+		<link rel="stylesheet" href="../assets/css/style.css" />   
+		
+		<script type="text/javascript" src="../assets/bootstrap/jquery.js"></script>
+		<script src="../assets/bootstrap/jquery.js"></script>
+
+		<title>Sehat - Membantu instansi pemerintah dan masyarakat untuk berbagi informasi, layanan kesehatan dan wadah bagi para relawan untuk membantu masyarakat yang terdampak pandemi</title>
+	</head>
+	<body>
+		<div class="w-100">
+			<!-- HEADER -->
+			<header class="header">
+				<nav>
+			    <div class="trigger-menu-wrapperzz w-100 position-fixed border-bottom bg-white">
+			      <div class="trigger-menu header-layanan-none-mobile">
+							<div class="px-4 header-c">
+								<div class="row no-gutters h-70px align-items-center">
+									<div class="col-md-2 col-lg-1 col-xl-1">
+										<a href="../index.html">
+											<img src="../assets/img/logo.svg" height="40">
+										</a>
+									</div>
+									<div class="col-md-0 col-lg-1 col-xl-4 search-col-none ">
+										<div class="text-right">
+											<!-- SEARCH -->
+											<div class="border rounded-10 box-shadow-l cursor-pointer" onclick="toggleLSearch(true)" style="height: 44px">
+												<div class="row text-left">
+													<div class="col-1">
+														<img src="../assets/img/icon/Location.svg" width="20" class="position-relative" style="top: 7px;left: 12px;">
+													</div>
+													<div class="col-11">
+														<div class="row no-gutters justify-align-center position-relative" style="top: 11px">
+															<div class="col-2 border-right">
+																<p class="mb-0 font-medium text-13 pl-2">Bali</p>
+															</div>
+															<div class="col-3 border-right">
+																<p class="mb-0 pl-3 font-medium text-13">Denpasar</p>
+															</div>
+															<div class="col-4">
+																<p class="mb-0 pl-3 text-truncate font-medium text-13">Non Covid-19</p>
+															</div>
+															<div class="col-2">
+																<button type="button" class="button-primary px-2 button-search-l">
+																	<img src="../assets/img/icon/white/Search.svg" width="13" class="d-inline-block mr-1 position-relative" style="top: -1px;">
+																	<span class="d-inline-block text-12">Cari</span>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-10 col-lg-11 col-xl-7 text-right">
+										<div class="d-inline-block position-relative pr-4 t-7">
+											<div class="pr-4 d-inline-block">
+												<a href="vaksinasi.html">
+													<p class="mb-0 color-black font-medium ls-2 text-13">Vaksinasi</p>
+												</a>
+											</div>
+											<div class="pr-4 d-inline-block">
+												<a href="oksigen.html">
+													<p class="mb-0 color-black font-medium ls-2 text-13">Oksigen</p>
+												</a>
+											</div>
+											<div class="pr-4 d-inline-block">
+												<a href="rumah-sakit.html">
+													<p class="mb-0 color-black font-medium ls-2 text-13">Rumah Sakit</p>
+												</a>
+											</div>
+											<div class="pr-4 d-inline-block">
+												<a href="ambulans.html">
+													<p class="mb-0 color-black font-medium ls-2 text-13">Ambulans</p>
+												</a>
+											</div>
+										</div>
+										<div class="float-right">
+											<div class="pr-4 d-inline-block">
+												<a href="urgent-call.html">
+													<p class="mb-0 color-primary font-medium ls-2 text-14"><img src="../assets/img/icon/blue/Calling.svg" class="mr-2" width="18">Urgent Call</p>
+												</a>
+											</div>
+											<div class="d-inline-block">
+												<a href="../user/login.html">
+													<button type="button" class="button-primary">Masuk</button>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="w-100 header-mobile">
+							<nav class="px-4 navbar navbar-expand-lg navbar-light">
+									<a href="../index.html">
+										<img src="../assets/img/logo.svg" height="45" class="my-1">
+									</a>
+								  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+										<img src="../assets/img/icon/menu.svg" width="24">
+								  </button>
+								  <div class=" collapse navbar-collapse h-100vh-header" id="navbarNav">
+								    <ul class="navbar-nav text-center">
+								      <li class="nav-item active">
+								        <a class="nav-link" href="../index.html">Beranda</a>
+								      </li>
+								      <li class="nav-item">
+								        <a class="nav-link" href="vaksinasi.html">Vaksinasi</a>
+								      </li>
+								      <li class="nav-item">
+								        <a class="nav-link" href="oksigen.html">Oksigen</a>
+								      </li>
+								      <li class="nav-item">
+								        <a class="nav-link disabled" href="rumah-sakit.html">Rumah Sakit</a>
+								      </li>
+								      <li class="nav-item">
+								        <a class="nav-link disabled" href="ambulans.html">Ambulans</a>
+								      </li>
+								      <div class="py-2">
+												<a href="urgent-call.html">
+													<p class="mb-0 color-primary font-medium ls-2 text-14"><img src="../assets/img/icon/blue/Calling.svg" class="mr-2" width="18">Urgent Call</p>
+												</a>
+											</div>
+											<div class="py-2">
+												<a href="../user/login.html">
+													<button type="button" class="button-primary">Masuk</button>
+												</a>
+											</div>
+								    </ul>
+								  </div>
+							</nav>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<div class="w-100">
+				<div class="container live-hero">
+					<p class="mb-0 text-28 font-semibold">Penyedia Oksigen Sanjiwani Gianyar</p>
+					<p class="mb-3 text-14 color-grey font-regular">
+						<img src="../assets/img/icon/Location.svg" width="16" class="object-fit mr-1 position-relative" style="top: -1px">
+						<a href="https://goo.gl/maps/un2LgeuX1WCBExnq8" target="_blank">
+							<span class="underline color-grey">Jl. Celuk Sukawati, Batubulan, Gianyar, Kabupaten Gianyar, Bali 80582</span>
+						</a>
+						<span class="dot-t d-inline-block mx-2" style="top: -3px;"></span>
+						<span class="font-semibold">Buka 24 jam</span>
+					</p>
+					<div class="rounded-6" style="overflow-x: scroll">
+						<div class="rounded-6" style="width: max-content;height: 320px;">
+							<img class="object-fit mr-1 d-inline-block w-auto cursor-pointer" onclick="togglePopup(true)" src="../assets/img/img/rs(2).jpg" height="320">
+							<img class="object-fit mr-1 d-inline-block w-auto cursor-pointer" onclick="togglePopup(true)" src="../assets/img/img/rs(1).jpg" height="320">
+							<img class="object-fit mr-1 d-inline-block w-auto cursor-pointer" onclick="togglePopup(true)" src="../assets/img/img/rs(4).jpg" height="320">
+							<img class="object-fit mr-1 d-inline-block w-auto cursor-pointer" onclick="togglePopup(true)" src="../assets/img/img/rs(3).jpg" height="320">
+						</div>
+					</div>
+					<div class="mt-4">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-8">
+								<div class="border-bottom pb-4 mb-4">
+									<p class="mb-3 font-semibold text-18">Detail Rumah Sakit</p>
+									<div class="row">
+										<div class="col-12 mb-3 pb-1">
+											<p class="mb-0 font-medium color-grey text-14">Tipe Ruangan</p>
+											<img src="../assets/img/icon/hospital.svg" class="d-inline-block mr-1" width="18">
+											<p class="mb-0 font-medium text-14 color-black text-truncate d-inline-block p-l-box">VIP, Umum, Kelas 1, Kelas 2, Kelas 3</p>
+										</div>
+										<div class="col-12">
+											<p class="mb-0 font-medium color-grey text-14">Tempat Tidur</p>
+											<img src="../assets/img/icon/protection.svg" class="d-inline-block mr-1" width="18">
+											<p class="mb-0 font-medium text-14 color-black text-truncate d-inline-block p-l-box">Covid-19, Non Covid-19</p>
+										</div>
+									</div>
+								</div>
+								<div class="border-bottom pb-4 mb-4">
+									<p class="mb-2 font-semibold text-18">Tentang Kami</p>
+									<p class="mb-0 font-regular text-14 lh-22 color-grey">
+										Rumah Sakit Bali Mandara merupakan sebuah rumah sakit tipe RSU yang berlokasi di Bali. Rumah sakit ini merupakan sebuah rumah sakit yang berkembang paling cepat di kota tersebut. Rumah sakit Bali Mandara mampu melayani pasien lokal maupun pasien internasional. Tidak hanya itu, RS Bali Mandara juga telah mendapatkan akreditasi KARS dari Departemen Kesehatan Indonesia. Rumah sakit ini pun dilengkapi dengan fasilitas yang lengkap untuk trauma dan evakuasi medis dengan layanan Hospital on Wheels. Layanan unggulan yang disediakan rumah sakit ini, yaitu Kemoterapi dan hemodialisis.
+									</p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+								<div class="sticky mt-3" style="top: 80px">
+									<div class="rounded-6 bg-white border box-shadow-l-right">
+										<div class="rounded-top mb-3  bg-primary">
+											<p class="mb-0 py-3 text-center text-white font-semibold text-18 ls-2 border-bottom">Kontak Rumah sakit</p>
+										</div>
+										<div class="px-4 pt-2 pb-3">
+											<p class="pb-1 font-regular color-black lh-22 text-13 ls-2 text-center">Informasi Rumah Sakit Bali Mandara yang dapat dihubungi kapan saja</p>
+										  <div class="row no-gutters">
+										  	<div class="col-6 mb-3">
+										  		<p class="mb-1 font-regular color-grey text-13">No. Telephone:</p>
+										  		<p class="mb-0 font-semibold text-14">(0362) 3303884</p>
+										  	</div>
+										  	<div class="col-6 mb-3">
+										  		<p class="mb-1 font-regular color-grey text-12">FAQ:</p>
+										  		<p class="mb-0 font-semibold text-14">028 582194812</p>
+										  	</div>
+										  	<div class="col-6 mb-3">
+										  		<p class="mb-1 font-regular color-grey text-13">No. Telephone 2:</p>
+										  		<p class="mb-0 font-semibold text-14">028 55219212</p>
+										  	</div>
+										  	<div class="col-6 mb-3">
+										  		<p class="mb-1 font-regular color-grey text-13">Lokasi:</p>
+										  		<a href="https://goo.gl/maps/un2LgeuX1WCBExnq8" target="_blank">
+														<span class="font-semibold text-14 underline color-black">Denpasar</span>
+													</a>
+										  	</div>
+										  	<div class="col-12 mb-3">
+										  		<p class="mb-1 font-regular color-grey text-12">Email:</p>
+										  		<p class="mb-0 font-semibold text-14">rsumandara@gmail.com</p>
+										  	</div>
+										  	<div class="col-12 mb-3">
+										  		<p class="mb-1 font-regular color-grey text-12">Rating:</p>
+										  		<a href="#testimoni">
+											  		<p class="mb-0 text-14 font-medium color-grey underline">
+															<img src="../assets/img/icon/white/Star.svg" class="d-inline-block position-relative" style="top: -1px;" width="18">
+															<span class="font-semibold">4.5</span>/5 <span>(1.401 Ulasan)</span></p>
+													</a>
+										  	</div>
+										  </div>
+										</div>
+									</div>
+									<p class="mb-2 mt-4 text-14 font-regular ls-2 color-grey">Bagikan:</p>
+									<div class="pt-1">
+										<a href="https://www.facebook.com/" target="_blank">
+											<img src="../assets/img/icon/social/facebook.svg" class="mr-1" width="30">
+										</a>
+										<a href="https://instagram.com/" target="_blank">
+											<img src="../assets/img/icon/social/instagram.svg" class="mr-1" width="30">
+										</a>
+										<a href="https://www.tiktok.com/" target="_blank">
+											<img src="../assets/img/icon/social/tik-tok.svg" class="mr-1" width="30">
+										</a>
+										<a href="https://www.youtube.com/" target="_blank">
+											<img src="../assets/img/icon/social/youtube.svg" class="mr-1" width="30">
+										</a>
+										<a href="https://www.tripadvisor.com/" target="_blank">
+											<img src="../assets/img/icon/social/tripadvisor.svg" class="mr-1" width="30">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- TESTIMONI -->
+			<div class="bg-white w-100" id="testimoni">
+				<div class="py-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-10 col-xl-10 no-gutters">
+								<h2 class="mb-0 text-22 lh-32 w-100">Apa kata mereka tentang kami</h2>
+								<p class="mb-0 font-regular color-grey text-14 lh-26 w-85">10,000+ orang telah menggunakan layanan kami</p>
+							</div>
+							<div class="col-2 col-xl-2">
+								<a class="carousel-control-prevs carousel-control-next" href="#ask" role="button" data-slide="prev">
+							    <img src="../assets/img/icon/white/Next-Left.svg" width="40">
+							  </a>
+							  <a class="carousel-control-next" href="#ask" role="button" data-slide="next">
+							    <img src="../assets/img/icon/white/Next-Right.svg" width="40">
+							  </a>
+							</div>	
+						</div>
+					</div>
+					<div id="ask" class="carousel slide" data-ride="carousel">
+					  <div class="container carousel-inner">
+					    <div class="carousel-item py-4 active">
+					    	<div class="row">
+					    		<div class="col-12 col-sm-6 col-lg-4 col-xl-4 mb-3">
+					    			<div class="testimoni">
+											<img class="avatar w-45" class="d-inline-block" src="../assets/img/img/live-edukasi(1).jpg">
+											<div class="d-inline-block pl-2 ls-2">
+												<p class="mb-0 font-medium text-18">Adit Setia</p>
+												<p class="mb-0 font-regular text-16 color-grey">Donatur</p>
+											</div>
+											<p class="pt-3 font-regular text-16 color-black ls-2 lh-26">“ Create a consistent multi-platform brand experience with our fully customisable platforms. experience with our fully customisable platforms. “</p>
+					    			</div>
+					    		</div>
+					    		<div class="col-12 col-sm-6 col-lg-4 col-xl-4 mb-3">
+					    			<div class="testimoni">
+											<img class="avatar w-45" class="d-inline-block" src="../assets/img/img/live-edukasi(2).jpg">
+											<div class="d-inline-block pl-2 ls-2">
+												<p class="mb-0 font-medium text-18">Amara Riski</p>
+												<p class="mb-0 font-regular text-16 color-grey">Donatur</p>
+											</div>
+											<p class="pt-3 font-regular text-16 color-black ls-2 lh-26">“ Create a consistent multi-platform brand experience with our fully customisable platforms. experience with our fully customisable platforms. “</p>
+					    			</div>
+					    		</div>
+					    		<div class="col-12 col-sm-6 col-lg-4 col-xl-4 mb-3 testimoni-hide">
+					    			<div class="testimoni">
+											<img class="avatar w-45" class="d-inline-block" src="../assets/img/img/live-edukasi(3).jpg">
+											<div class="d-inline-block pl-2 ls-2">
+												<p class="mb-0 font-medium text-18">P. Sujimi</p>
+												<p class="mb-0 font-regular text-16 color-grey">Donatur</p>
+											</div>
+											<p class="pt-3 font-regular text-16 color-black ls-2 lh-26">“ Create a consistent multi-platform brand experience with our fully customisable platforms. experience with our fully customisable platforms. “</p>
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="carousel-item py-4">
+					    	<div class="row">
+					    		<div class="col-12 col-sm-6 col-lg-4 col-xl-4 mb-3">
+					    			<div class="testimoni">
+											<img class="avatar w-45" class="d-inline-block" src="../assets/img/img/live-edukasi(4).jpg">
+											<div class="d-inline-block pl-2 ls-2">
+												<p class="mb-0 font-medium text-18">Mina Sharon</p>
+												<p class="mb-0 font-regular text-16 color-grey">Donatur</p>
+											</div>
+											<p class="pt-3 font-regular text-16 color-black ls-2 lh-26">“ Create a consistent multi-platform brand experience with our fully customisable platforms. experience with our fully customisable platforms. “</p>
+					    			</div>
+					    		</div>
+					    		<div class="col-12 col-sm-6 col-lg-4 col-xl-4 mb-3">
+					    			<div class="testimoni">
+											<img class="avatar w-45" class="d-inline-block" src="../assets/img/img/live-edukasi(5).jpg">
+											<div class="d-inline-block pl-2 ls-2">
+												<p class="mb-0 font-medium text-18">Somia Mulia</p>
+												<p class="mb-0 font-regular text-16 color-grey">Donatur</p>
+											</div>
+											<p class="pt-3 font-regular text-16 color-black ls-2 lh-26">“ Create a consistent multi-platform brand experience with our fully customisable platforms. experience with our fully customisable platforms. “</p>
+					    			</div>
+					    		</div>
+					    		<div class="col-12 col-sm-6 col-lg-4 col-xl-4 mb-3 testimoni-hide">
+					    			<div class="testimoni">
+											<img class="avatar w-45" class="d-inline-block" src="../assets/img/img/live-edukasi(6).jpg">
+											<div class="d-inline-block pl-2 ls-2">
+												<p class="mb-0 font-medium text-18">Putri Muti</p>
+												<p class="mb-0 font-regular text-16 color-grey">Donatur</p>
+											</div>
+											<p class="pt-3 font-regular text-16 color-black ls-2 lh-26">“ Create a consistent multi-platform brand experience with our fully customisable platforms. experience with our fully customisable platforms. “</p>
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<!-- POPUP -->
+			<div class="delay" style="display: none;" id="pop-up-search">
+				<div class="pop-up-bg cursor-pointer" onclick="toggleLSearch(false)">
+				</div>
+				<div class="pop-up-search">
+					<div class="container">
+						<div class="row no-gutters text-center py-3">
+							<div class="col-0 col-md-2">
+							</div>
+							<div class="col-12 col-md-8">
+								<p class="mb-2 font-semibold text-16 d-inline-block" style="border-bottom: 2px solid #222312">Cari Penyedia Oksigen</p>
+								<div class="border px-4 py-1 rounded-10 box-shadow-l cursor-pointer">
+									<div class="row text-left">
+										<div class="col-6 col-sm-3">
+											<label class="mb-0 text-12 font-semibold color-black">Provinsi</label>
+											<select type="text" class="w-100 input-layanan px-0">
+												<option>-Semua Provinsi-</option>
+												<option selected="">Bali</option>
+												<option>Jawa Barat</option>
+											</select>
+										</div>
+										<div class="col-6 col-sm-3">
+											<label class="mb-0 text-12 font-semibold color-black">Kabupaten</label>
+											<select type="text" class="w-100 input-layanan px-0">
+												<option>-Semua Kabupaten-</option>
+												<option selected="">Denpasar</option>
+												<option>Gianyar</option>
+												<option>Badung</option>
+												<option>Tabanan</option>
+											</select>
+										</div>
+										<div class="col-6 col-sm-3">
+											<label class="mb-0 text-12 font-semibold color-black">Tipe Layanan</label>
+											<select type="text" class="w-100 input-layanan px-0">
+												<option>-Semua Tipe-</option>
+												<option>Covid-19</option>
+												<option selected="">Non Covid-19</option>
+											</select>
+										</div>
+										<div class="col-6 col-sm-3 pr-0">
+											<a href="oksigen.html">
+												<button type="button" class="button-primary px-2 w-100 mt-1">
+													<img src="../assets/img/icon/white/Search.svg" width="17" class="d-inline-block mr-1 position-relative" style="top: -1px;">
+													<span class="d-inline-block">Cari</span>
+												</button>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-0 col-md-2">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+<!-- BOOTSTRAP -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- AOS ANIMATION -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<style type="text/css">
+	.border-bottom{
+		border-bottom:1px solid #f0f1f3!important
+	}
+	.btn-l-p{
+ 		font-size: 13px!important;
+ 		padding: 8px 24px!important;
+ 		height: auto;
+	}
+</style>

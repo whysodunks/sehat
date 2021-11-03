@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" type="image/svg" href="../assets/img/logo.svg"/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />  
+		<link rel="stylesheet" href="../assets/css/style.css" />   
+		
+		<script type="text/javascript" src="../assets/bootstrap/jquery.js"></script>
+		<script src="../assets/bootstrap/jquery.js"></script>
+
+		<title>Sehat - Membantu instansi pemerintah dan masyarakat untuk berbagi informasi, layanan kesehatan dan wadah bagi para relawan untuk membantu masyarakat yang terdampak pandemi</title>
+	</head>
+	<body>
+		<div class="w-100 live-chat">
+			<!--CATEGORY-->
+			<div class="px-3 mx-4 mt-4 border rounded-6 pt-4">
+				<div class="pb-4 px-4 mb-2">
+					<div class="row">
+						<!-- LEFT -->
+						<div class="col-12 col-sm-12 col-md-12 col-xl-4 mb-3 live-chat-hidezz">
+							<div class="px-3 mb-3">
+								<a href="../index.html">
+									<div class="py-2 px-3 rounded-6 d-inline-block">
+										<img src="../assets/img/icon/back-left.svg"> <span class="font-semibold color-black ls-2 pl-2">Live Chat</span>
+									</div>
+								</a>
+								<div class="row mt-3 mb-3 border rounded-6 no-gutters">
+									<div class="col-1">
+										<img src="../assets/img/icon/Search.svg" width="20" class="position-relative" style="top: 7px;left: 12px;">
+									</div>
+									<div class="col-10">
+										<input type="text" class="ml-3 w-100 border-none search-input position-relative" placeholder="Cari artikel disini.." style="left: -4px;height: 44px;top: -2px;background-color: transparent">
+									</div>
+								</div>
+							</div>
+							<div class="px-3 py-3 chat-hover cursor-pointer rounded-6" style="background-color: #F6FBFF" id="chat-button-person">
+								<div onclick="toggleChatLive()">
+									<div class="">
+										<img class="avatar w-42px d-inline-block align-top position-relative" src="../assets/img/img/live-edukasi(6).jpg" style="top: 4px;">
+										<div class="d-inline-block pl-2 ls-2">
+											<p class="mb-0 font-semibold text-16">Dokter Regina P.</p>
+											<p class="mb-0 font-medium ls-2 text-13 color-placeholder">19:30 PM</p>
+										</div>
+										<div class="float-right bg-primary text-center rounded-6" id="chat-notif">
+											<p class="mb-0 font-medium text-12 text-white position-relative w-20px" style="top: 1px;left: -0.5px">1</p>
+										</div>
+									</div>
+									<p class="mb-0 mt-2 pt-1 ls-2 color-black text-13 text-truncate-2 font-regular">Halo Putri selamat malam, perkenalkan saya Dokter Regina. Terkait keluhan kesehatan yang Putri ajukan mohon beritahu saya bagaimana keadaan saat ini.</p>
+								</div>
+							</div>
+						</div>
+						<!-- CENTER -->
+						<div class="col-12 col-sm-12 col-md-12 col-xl-5 mb-3 rounded-10 position-relative h-live-chat-m" id="chat-isi-1" style="background-color: #f7f7f7;height: 580px;display: none;">
+							<p class="text-12 text-center mt-3 font-regular color-placeholder py-2">Hari ini, 18 Sep 2021</p>
+							<div class="row no-gutters mt-3 mb-2 pb-1">
+								<div class="col-2 col-sm-1">
+									<img class="avatar w-30px" class="d-inline-block" src="../assets/img/img/live-edukasi(6).jpg">
+								</div>
+								<div class="col-10 col-sm-10">
+									<div class="d-inline-block position-relative pr-3" style="top: -4px;">
+										<p class="mb-0 font-regular color-grey text-12 text-truncate">Dokter Regina P. <span class="pl-2 color-placeholder">19:30 PM</span></p>
+										<div class="bg-white mt-1 rounded-10 chat-text">
+											<p class="mb-0 font-regular text-13">Halo Putri selamat malam, perkenalkan saya Dokter Regina. Terkait keluhan kesehatan yang Putri ajukan mohon beritahu saya bagaimana keadaan saat ini.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row no-gutters mt-3 pt-1 mb-2 pb-1" id="your-chat" style="display: none;">
+								<div class="col-12 text-right">
+									<div class="d-inline-block position-relative pr-3" style="top: -4px;">
+										<p class="mb-0 font-regular color-grey text-12 text-truncate">Pesan Anda <span class="pl-2 color-placeholder">19:31 PM</span></p>
+										<div class="mt-1 rounded-10 chat-text bg-blue-light" style="border-top-right-radius: 0;">
+											<p class="mb-0 font-regular text-13">Saat ini sedikit demam dan sakit kepala dokter...</p>
+										</div>
+									</div>
+								</div>
+								<p class="text-left color-placeholder font-regular text-12 mt-3 pt-1">Dokter Regina P. sedang mengetik...</p>
+							</div>
+							<div class="custom-container-fluid text-center px-0">
+								<div class="row align-items-center ml-5 justify-content-center no-gutters">
+									<div class="col-11 bg-white mb-3 rounded-10 w-100 position-absolute mr-5" style="bottom: 10px;box-shadow: 0px 0px 7px #f3f3f3">
+										<div class="row">
+											<div class="col-9">
+												<input type="text-12" class="border-none w-100" placeholder="Tulis pesan kepada Dokter Regina P.">
+											</div>
+											<div class="col-3 text-right">
+												<div class="d-inline-block bg-primary cursor-pointer text-center px-2 py-1 ml-2 rounded-10 position-relative" style="height: 34px;top: 6px;right: 12px;" onclick="toggleSendChat()">
+													<img src="../assets/img/icon/white/Send.svg" width="18">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- RIGHT -->
+						<div class="col-12 col-sm-12 col-md-12 col-xl-3 mb-3" id="chat-isi-2" style="display: none;">
+							<div class="text-center border rounded-10 p-3 pt-4" style="height: 580px">
+								<img class="avatar w-130px" class="d-inline-block mb-3" src="../assets/img/img/live-edukasi(6).jpg">
+								<p class="mb-0 mt-2 font-semibold ls-2 text-20">Dokter Regina P.</p>
+								<p class="mb-0 font-medium ls-2 text-14 color-grey">Psikiater</p>
+								<div class="text-left pt-3">
+									<div class="row mb-3 bg-blue-light pt-2 rounded-6 pb-2 no-gutters">
+										<div class="col-4 text-center">
+											<p class="mb-1 font-medium text-13 color-black">Rating</p>
+											<img src="../assets/img/icon/white/Star.svg" class="d-inline-block mr-1" width="16">
+											<p class="mb-0 font-medium text-13 color-black mt-1 d-inline-block">4.8</p>
+										</div>
+										<div class="col-4 text-center">
+											<p class="mb-1 font-medium text-13 color-black">Peserta</p>
+											<img src="../assets/img/icon/white/2User.svg" class="d-inline-block mr-1" width="16">
+											<p class="mb-0 font-medium text-13 color-black mt-1 d-inline-block">800</p>
+										</div>
+										<div class="col-4 text-center">
+											<p class="mb-1 font-medium text-13 color-black">Respon</p>
+											<img src="../assets/img/icon/Chat.svg" class="d-inline-block mr-1" width="16">
+											<p class="mb-0 font-medium text-13 color-black mt-1 d-inline-block">Baik</p>
+										</div>
+									</div>
+									<p class="mb-2 font-medium text-13">Deskripsi</p>
+									<p class="mb-4 font-regular text-12 color-grey">Saya seorang dokter spesialis yang mendalami ilmu kesehatan jiwa dan perilaku (psikiatri). Psikiatri sendiri adalah cabang keilmuan medis yang fokus pada diagnosis, pengobatan, dan pencegahan terhadap gangguan emosional, kejiwaan, maupun perilaku.</p>
+									<a href="../index.html">
+										<button type="button" class="button-secondary w-100 bg-black border-none">
+											<img src="../assets/img/icon/white/Logout.svg" width="20" class="d-inline-block position-relative mr-1" style="top: -2px;">
+											<span class="text-white">Keluar Chat</span>
+										</button>
+										<p class="mb-0 mt-2 text-center font-regular color-grey text-10">Setelah klik keluar perespon akan meninggalkan chat</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- EMPTY -->
+						<div class="col-12 col-sm-12 col-md-12 col-xl-8 mb-3 text-center bg-chat-person rounded-10" id="chat-empty" style="height: 580px;">
+							<img src="../assets/img/icon/empty.svg" class="mt-5" width="300">
+							<p class="mt-3 mb-0 font-medium text-20">Mulai Chat Dengan Dokter Sesuai Keluhan</p>
+							<p class="mb-0 font-regular color-grey text-13 mt-1">Sepertinya Anda memiliki pesan yang belum dibaca</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- POPUP -->
+			<div class="delay d-block" style="display: none;" id="pop-up">
+				<div class="pop-up-bg">
+				</div>
+				<div class="pop-up-body p-4 text-center" style="width: 420px;">
+					<p class="mt-3 mb-0 text-20 font-semibold">Apakah Anda memiliki keluhan?</p>
+					<p class="mb-3 text-12 color-grey font-regular mt-1">Apakah alasan Anda ingin melakukan chat dengan dokter? Isi form berikut dan mulai chat dengan dokter</p>
+					<input type="text" class="w-100 mt-2 mb-3" placeholder="Masukkan keluhan Anda disini.." style=";height: 44px;">
+					<button class="button-primary w-100" onclick="togglePopup(false)">Mulai Chat Dokter</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+<!-- BOOTSTRAP -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- AOS ANIMATION -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>

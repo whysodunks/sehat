@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" type="image/svg" href="../assets/img/logo.svg"/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />  
+		<link rel="stylesheet" href="../assets/css/style.css" />   
+		
+		<script type="text/javascript" src="../assets/bootstrap/jquery.js"></script>
+		<script src="../assets/bootstrap/jquery.js"></script>
+
+		<title>Sehat - Membantu instansi pemerintah dan masyarakat untuk berbagi informasi, layanan kesehatan dan wadah bagi para relawan untuk membantu masyarakat yang terdampak pandemi</title>
+	</head>
+	<body>
+		<div class="w-100 live-chat">
+			<!--CATEGORY-->
+			<div class="px-3" id="urgent-call-height" style="background-color: #0000008f">
+				<div class="py-4 mb-2">
+					<div class="w-100">
+			      <div class="row justify-content-center w-100 no-gutters">
+			        <div class="col-12 col-sm-8 col-md-6 col-lg-4" id="urgent-call">
+			        	<div class="bg-primary px-4 py-3 rounded-top border-bottom">
+			          	<p class="mb-0 text-center text-20 font-semibold pb-2 text-white">Urgent Call</p>
+									<a href="../index.html">
+										<img src="../assets/img/icon/white/Arrow-Right.svg" width="24" class="position-absolute m-3 cursor-pointer" style="left: 0;top: 0;transform: rotate(180deg);" onclick="togglePopup(false)">
+									</a>
+			        	</div>
+			          <div class="px-4 bg-white pt-3 rounded-bottom pb-4">
+										<div class="text-left">
+											<label class="color-black font-medium">Lokasi Anda/Pasien: </label>
+											<input type="text" class="w-100 mb-2" value="Jalan Raya Belega No.39, Belega, Kabupaten Gianyar, Bali">
+											<div class="cursor-pointer mb-2 pb-1">
+												<img src="../assets/img/icon/gps.svg" width="20"><span class="ml-1 font-medium text-14 text-danger">Gunakan lokasi saat ini</span>
+											</div>
+											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.3108150051476!2d115.3059357147979!3d-8.56608239384281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd215de24c2445f%3A0xdde253f4020cb03b!2sJl.%20Raya%20Belega%20No.39%2C%20Belega%2C%20Kec.%20Blahbatuh%2C%20Kabupaten%20Gianyar%2C%20Bali%2080581!5e0!3m2!1sen!2sid!4v1631636430007!5m2!1sen!2sid" class="w-100 rounded-6" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+										</div>
+										<div class="row my-3 pt-2">
+											<div class="col-12 mb-2 text-left">
+												<label class="color-black font-medium">Apa yang Terjadi/Dibutuhkan: </label>
+											</div>
+											<div class="col-6 col mb-4">
+												<div class="border rounded-6 p-3 text-center cursor-pointer card-box" id="crash" onclick="toggleUrgentCall('crash')">
+													<img src="../assets/img/icon/fitur/urgent(4).svg" width="50" class="rounded-100 p-2" style="background-color: #fff5f5">
+													<p class="mb-0 mt-2 text-14 font-medium">Kecelakaan</p>
+												</div>
+											</div>
+											<div class="col-6 col mb-4">
+												<div class="border rounded-6 p-3 text-center cursor-pointer card-box" id="ambulans" onclick="toggleUrgentCall('ambulans')">
+													<img src="../assets/img/icon/fitur/urgent(3).svg" width="50" class="rounded-100 p-2" style="background-color: #eafff2">
+													<p class="mb-0 mt-2 text-14 font-medium">Ambulans</p>
+												</div>
+											</div>
+											<div class="col-6 col mb-4">
+												<div class="border rounded-6 p-3 text-center cursor-pointer card-box" id="covid" onclick="toggleUrgentCall('covid')">
+													<img src="../assets/img/icon/fitur/urgent(2).svg" width="50" class="rounded-100 p-2" style="background-color: #fff8ec">
+													<p class="mb-0 mt-2 text-14 font-medium">Covid-19 Help</p>
+												</div>
+											</div>
+											<div class="col-6 col mb-4">
+												<div class="border rounded-6 p-3 text-center cursor-pointer card-box" id="first_aid" onclick="toggleUrgentCall('first_aid')">
+													<img src="../assets/img/icon/fitur/urgent(1).svg" width="50" class="rounded-100 p-2" style="background-color: #ebeaff">
+													<p class="mb-0 mt-2 text-14 font-medium">First Aid</p>
+												</div>
+											</div>
+										</div>
+										<button class="button-primary w-100" style="height: 46px" onclick="toggleUrgentCallSuccess()">Panggil Bantuan</button>
+			          </div>
+			        </div>
+			        <div class="col-12 col-sm-8 col-md-6 col-lg-4 rounded-6 bg-white text-center delay mt-5" style="display: none;" id="urgent-call-success">
+								<div class="px-4 pb-5">
+									<img src="../assets/img/icon/check-white.svg" width="60" class="mx-auto d-block rounded-100 bg-success mt-5" style="width: 120px;height: 120px">
+									<p class="mb-1 mt-3 text-24 color-black font-semibold">Berhasil Memanggil Bantuan</p>
+									<p class="mb-0 text-13 font-regular color-grey">Bantuan akan segera tiba dalam waktu <b>5 menit</b> lagi </p>
+									<a href="../index.html">
+										<button class="button-white mt-4 color-black" style="height: 46px">Kembali ke Beranda</button>
+									</a>
+								</div>
+			        </div>
+			      </div>
+			    </div>		
+				</div>
+			</div>
+			<!-- POPUP -->
+			<div class="delay " style="display: none;" id="pop-up">
+				<div class="pop-up-bg">
+				</div>
+				<div class="pop-up-body py-2 pb-4 px-4 text-center" style="width: 420px;top: 10px;">
+						
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="../assets/js/script.js"></script>
+<!-- BOOTSTRAP -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- AOS ANIMATION -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
